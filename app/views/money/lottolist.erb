@@ -1,0 +1,19 @@
+
+<div class="container">
+<h1>허접하지만 로또게시판 </h1>
+
+    <div class="row">
+    <%  @lottodata.each do |value| %>
+    
+    
+      <div class="col-xs-6 col-md-3" align="center">
+          <div class="alert alert-success" role="alert">
+        <%= image_tag(value.lotto)%>
+        </div>
+        </div>
+    
+    <% end %>
+    </div>
+
+<a href="/">처음으로 </a>
+</div>

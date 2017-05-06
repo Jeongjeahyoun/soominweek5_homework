@@ -1,0 +1,17 @@
+
+<div class="container">
+    <h1>허접하지만 게시판 </h1>
+    
+    <% @allData.each do |value| %>
+    글번호 : <%=value.id %><br>
+    제목 : <%=value.title %> <br>
+    글쓴이 : <%=value.writer %> <br>
+    내용 : <%=value.contents %> <br>
+    
+    <hr>
+    
+    <% end %>
+    
+    
+    <a href="/">처음으로 </a>
+</div>
